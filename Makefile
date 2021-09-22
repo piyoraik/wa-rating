@@ -6,6 +6,3 @@ up:
 
 down:
 	@docker compose --env-file .docker.env down
-
-dev:
-	@yarn dev
