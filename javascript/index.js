@@ -74,3 +74,12 @@ $(function () {
 		})
 	})
 })
+
+let i = 1
+$('#addbtn').on('click', function () {
+	$('#path').append(`
+	<label for="inst${i}">通過駅</label>
+	<input type="text" class="form-control" name="inst${i}" id="inst${i}"></input>	
+	`)
+	i++
+})

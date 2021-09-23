@@ -10,7 +10,7 @@
 
 <body class="mt-5">
 	<div class="container">
-		<form class="row justify-content-md-center" id="form">
+		<form method="GET" action="/getecho.php" class="row justify-content-md-center" id="form">
 			<div class="col-md-8">
 				<div class=" mb-3">
 					<label for="name" class="form-label">氏名</label>
@@ -47,10 +47,23 @@
 					<input type="text" class="form-control" name="address" id="address">
 				</div>
 				<div class="mb-3">
-					<button type="submit" class="btn btn-primary col-md-12">Submit</button>
+					<div>
+						<label for="startst">始発駅</label>
+						<input type="text" class="form-control" name="startst" id="startst">
+					</div>
+					<div id="path">
+					</div>
+					<div>
+						<label for="endst">終着駅</label>
+						<input type="text" class="form-control" name="endst" id="endst">
+					</div>
 				</div>
-			</div>
+				<div class="mb-3 row justify-content-evenly">
+					<button type="submit" class="btn btn-primary col-md-5">Submit</button>
 		</form>
+		<button class="btn btn-success col-md-5" id="addbtn">Add</button>
+	</div>
+	</div>
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
